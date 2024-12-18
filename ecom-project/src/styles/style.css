@@ -1,0 +1,20 @@
+:root {
+	--white: #fff;
+	--transition: 0.5s;
+	--letter-spacing: 1px;
+	--main-color-100: #d2ecff;
+	--main-color-500: #2d7fb9;
+	--main-color-500: #2d7fb9;
+	--box-shadow1: 0px 1px 1px #ccc;
+}
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto Condensed", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+}
