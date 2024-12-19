@@ -51,3 +51,47 @@ nav {
 	background-color: var(--main-color-100);
 	padding-left: 1.5rem;
 }
+.social_links {
+	display: none;
+}
+@media screen and (min-width: 800px) {
+	.toggle_btn {
+		display: none;
+	}
+	.nav_center {
+		max-width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		padding: 0.5rem 1rem;
+		justify-content: space-between;
+	}
+	.nav_header {
+		padding: 0px;
+	}
+	.social_links {
+		display: flex;
+		gap: 1rem;
+	}
+	.show_container,
+	.links_container {
+		height: auto;
+	}
+	.nav_links {
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	.nav_links a:hover {
+		padding: 0.5rem 1rem;
+		color: var(--main-color-500);
+		background: transparent;
+	}
+	.social_links a {
+		color: var(--main-color-300);
+		transition: var(--transition);
+	}
+	.social_links a:hover {
+		color: var(--main-color-500);
+	}
+}

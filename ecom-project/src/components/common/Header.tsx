@@ -11,7 +11,9 @@ const {
 	links_container,
 	nav_links,
 	show_container,
+	social_links,
 } = styles;
+
 export default function Header() {
 	const [showLinks, setShowLinks] = useState(false);
 	return (
@@ -44,6 +46,15 @@ export default function Header() {
 						})}
 					</ul>
 				</div>
+				<ul className={social_links}>
+					{social.map(({ id, url, icon }) => {
+						return (
+							<li key={id}>
+								<a href={url}>{icon}</a>
+							</li>
+						);
+					})}
+				</ul>
 			</div>
 		</nav>
 	);
